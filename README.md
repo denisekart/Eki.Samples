@@ -1,17 +1,17 @@
 ##Available target frameworks
 https://docs.microsoft.com/en-us/dotnet/standard/frameworks
 
-##Setup
+##Setup and tutorials
 https://weblog.west-wind.com/posts/2017/jun/22/multitargeting-and-porting-a-net-library-to-net-core-20
 https://github.com/RickStrahl/Westwind.Utilities/blob/master/Westwind.Utilities/Westwind.Utilities.csproj
 
 
 
-.NET project directory structure guidelines
+##.NET project directory structure guidelines
 
 https://gist.github.com/davidfowl/ed7564297c61fe9ab814
 
---GIST
+###--GIST
 -------------------------------------------
 $/
   artifacts/
@@ -42,11 +42,12 @@ artifacts - Build outputs go here. Doing a build.cmd/build.sh generates artifact
 packages - NuGet packages
 build - Build customizations (custom msbuild files/psake/fake/albacore/etc) scripts
 build.cmd - Bootstrap the build for windows
+build.bat - Bootstrap the build for windows
 build.sh - Bootstrap the build for *nix
 global.json - ASP.NET vNext only
 
 .gitignore
-also see : 
+###also see : 
 https://github.com/github/gitignore 
 https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 https://github.com/angular/angular/blob/master/.gitignore
