@@ -420,3 +420,13 @@ yarn-error.log
 
 # User specific bazel settings
 .bazelrc.user
+
+
+
+###################################################################################################VSCODE
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
