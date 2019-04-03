@@ -382,6 +382,13 @@ yarn-error.log
 /output/*
 /artifacts/*
 
+*/tools/*
+!*/tools/packages.config
+!*/build/scripts/*
+
+*/output/*
+*/artifacts/*
+
 
 ###################################################################################################ANGULAR
 
