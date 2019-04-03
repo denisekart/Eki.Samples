@@ -51,6 +51,7 @@ global.json - ASP.NET vNext only
 https://github.com/github/gitignore 
 https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 https://github.com/angular/angular/blob/master/.gitignore
+https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore
 
 -------------------------------------------------
 [Oo]bj/
