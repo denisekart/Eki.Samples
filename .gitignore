@@ -374,7 +374,7 @@ yarn-error.log
 
 # User specific bazel settings
 .bazelrc.user
-
+###################################################################################################CAKE
 /tools/*
 !/tools/packages.config
 !/build/scripts/*
@@ -382,12 +382,12 @@ yarn-error.log
 /output/*
 /artifacts/*
 
-*/tools/*
-!*/tools/packages.config
-!*/build/scripts/*
+**/tools/*
+!**/tools/packages.config
+!**/build/scripts/*
 
-*/output/*
-*/artifacts/*
+**/output/*
+**/artifacts/*
 
 
 ###################################################################################################ANGULAR
