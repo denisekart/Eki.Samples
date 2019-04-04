@@ -53,6 +53,9 @@ Action<string> GetTaskRunner(string task){
 #endregion //VARIABLES
 
 #region TASKS
+var cleanTask=Task("Clean")
+   .Description("Runs the clean task for each project")
+   .DoesForEach(routes,GetTaskRunner("Clean"));
 var restoreTask=Task("Restore")
    .Description("Runs the restore task for each project")
    .DoesForEach(routes,GetTaskRunner("Restore"));
@@ -64,6 +67,10 @@ var testTask=Task("Test")
    .Description("Runs the test task for each project")
    .IsDependentOn("Build")
    .DoesForEach(routes,GetTaskRunner("Test"));
+   var publishTask=Task("Publish")
+   .IsDependentOn("Build")
+   .Description("Runs the publish task for each project")
+   .DoesForEach(routes,GetTaskRunner("Publish"));
 var defaultTask=Task("Default")
    .Description("Runs the test task for each project")
    .IsDependentOn("Test")
@@ -82,7 +89,7 @@ Task("Help")
       GetTaskRunner("Help").Invoke(route);
       });
 
-args.WithTaskDescriptions(restoreTask.Task,buildTask.Task,testTask.Task,defaultTask.Task);
+args.WithTaskDescriptions(cleanTask.Task,restoreTask.Task,buildTask.Task,testTask.Task,defaultTask.Task,publishTask.Task);
 #endregion //MISC
 
 

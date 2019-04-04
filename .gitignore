@@ -383,6 +383,7 @@ yarn-error.log
 /artifacts/*
 
 **/tools/*
+**/*/tools/*
 !**/tools/packages.config
 !**/build/scripts/*
 
